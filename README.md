@@ -1,5 +1,5 @@
-# Yay Movies Re-Design
+# YayMovies Re-Design
 
-This template is a redesign of my subsite <a href="https://margaiwangara.github.io/yaymovies">YayMovies</a>. It has been developed using flexbox and grid layouts. Still under construction. Only first page availabe
+This template is a redesign of my subsite <a href="https://margaiwangara.github.io/yaymovies" target="_blank">YayMovies</a>. It has been developed using flexbox and grid layouts. Still under construction. Only first page availabe
 <br>
 &copy; 2019 - Lazy Loading Inc.
