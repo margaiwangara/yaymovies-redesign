@@ -1,0 +1,23 @@
+#backdrop-image {
+  background: url("https://image.tmdb.org/t/p/original/59qyrVGLLtrcuFtJGdixzn7H4OI.jpg")
+    no-repeat center/cover;
+  min-height: 500px;
+  max-width: 100%;
+}
+
+#backdrop-image:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 500px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  content: "";
+}
+#backdrop-image .wrapper {
+  position: absolute;
+  top: 55%;
+  margin-bottom: 50px;
+  width: 100%;
+  z-index: 1;
+}

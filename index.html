@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span>Yay</span>
+          <span>Movies</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#myNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Now Showing</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Trending</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Popular</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="now-showing">
+      <div class="now-showing-inner">
+        <div class="carousel slide" data-ride="carousel" id="myCarousel">
+          <ol class="carousel-indicators">
+            <li data-slide-to="0" data-target="#myCarousel" class="active"></li>
+            <li data-slide-to="1" data-target="#myCarousel"></li>
+            <li data-slide-to="2" data-target="#myCarousel"></li>
+            <li data-slide-to="3" data-target="#myCarousel"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active carousel-image-1">
+              <div class="carousel-caption">
+                <h1 class="display-4">Carousel Header 1</h1>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates possimus error asperiores, nobis in, quibusdam
+                  dignissimos nemo quaerat doloremque animi quam consequuntur ab
+                  adipisci sit aspernatur nam nesciunt! Porro, esse?
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item carousel-image-2">
+              <div class="carousel-caption">
+                <h1 class="display-4">Carousel Header 2</h1>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates possimus error asperiores, nobis in, quibusdam
+                  dignissimos nemo quaerat doloremque animi quam consequuntur ab
+                  adipisci sit aspernatur nam nesciunt! Porro, esse?
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item carousel-image-3">
+              <div class="carousel-caption">
+                <h1 class="display-4">Carousel Header 3</h1>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates possimus error asperiores, nobis in, quibusdam
+                  dignissimos nemo quaerat doloremque animi quam consequuntur ab
+                  adipisci sit aspernatur nam nesciunt! Porro, esse?
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item carousel-image-4">
+              <div class="carousel-caption">
+                <h1 class="display-4">Carousel Header 4</h1>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates possimus error asperiores, nobis in, quibusdam
+                  dignissimos nemo quaerat doloremque animi quam consequuntur ab
+                  adipisci sit aspernatur nam nesciunt! Porro, esse?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="trending-daily">
+      <div class="trending-daily-inner py-5 px-4">
+        <h1 class="h5 border-bottom py-2 mb-3">Trending Today</h1>
+        <div class="row">
+          <div class="col-md-2 col-sm-4 mb-sm-2">
+            <div class="card">
+              <img
+                src="https://source.unsplash.com/random/175x200"
+                alt="movie-poster-1"
+              />
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 mb-sm-2">
+            <div class="card">
+              <img
+                src="https://source.unsplash.com/random/176x200"
+                alt="movie-poster-2"
+              />
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 mb-sm-2">
+            <div class="card">
+              <img
+                src="https://source.unsplash.com/random/177x200"
+                alt="movie-poster-3"
+              />
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 mb-sm-2">
+            <div class="card">
+              <img
+                src="https://source.unsplash.com/random/178x200"
+                alt="movie-poster-4"
+              />
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 mb-sm-2">
+            <div class="card">
+              <img
+                src="https://source.unsplash.com/random/179x200"
+                alt="movie-poster-5"
+              />
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4">
+            <div class="card">
+              <img
+                src="https://source.unsplash.com/random/1710x200"
+                alt="movie-poster-6"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="popular">
+      <div class="popular-inner py-5 px-4">
+        <h1 class="h5 border-bottom py-2 mb-3">Popular</h1>
+        <div class="row">
+          <div class="col-md-2 col-sm-4 mb-sm-2">
+            <div class="card">
+              <img
+                src="https://source.unsplash.com/random/175x200"
+                alt="movie-poster-1"
+              />
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 mb-sm-2">
+            <div class="card">
+              <img
+                src="https://source.unsplash.com/random/176x200"
+                alt="movie-poster-2"
+              />
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 mb-sm-2">
+            <div class="card">
+              <img
+                src="https://source.unsplash.com/random/177x200"
+                alt="movie-poster-3"
+              />
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 mb-sm-2">
+            <div class="card">
+              <img
+                src="https://source.unsplash.com/random/178x200"
+                alt="movie-poster-4"
+              />
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 mb-sm-2">
+            <div class="card">
+              <img
+                src="https://source.unsplash.com/random/179x200"
+                alt="movie-poster-5"
+              />
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4">
+            <div class="card">
+              <img
+                src="https://source.unsplash.com/random/1710x200"
+                alt="movie-poster-6"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

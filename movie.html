@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/movie.css" />
+
+    <title>Single Page Movie</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span>Yay</span>
+          <span>Movies</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#myNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Now Showing</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Trending</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Popular</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="backdrop-image">
+      <div class="backdrop-inner">
+        <div class="wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 mb-2">
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="https://source.unsplash.com/random/150x200"
+                      alt="sample-image"
+                    />
+                    <h1>Sample Heading</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Natus, ipsa optio sint cumque blanditiis quas cupiditate
+                      quibusdam rerum asperiores excepturi.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-8">
+                <div class="row">
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <img
+                          src="https://source.unsplash.com/random/1280x720"
+                          alt="sample-large-image"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col">
+                    <div class="media border p-3">
+                      <img
+                        src="https://source.unsplash.com/random/64x64"
+                        alt="sample-media-image"
+                        class="rounded-circle pr-2"
+                      />
+                      <div class="media-body">
+                        <h3 class="m-0">Username</h3>
+                        <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Quisquam necessitatibus qui eligendi aliquid
+                          ipsum officiis nemo optio explicabo sint aliquam?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
