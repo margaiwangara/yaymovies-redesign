@@ -145,5 +145,17 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        var data = [1, 4, 54, 89, 32, 0, 12];
+
+        data.forEach((value, key) => {
+          setTimeout(() => {
+            console.log(value);
+          }, key * 5000);
+        });
+      });
+    </script>
   </body>
 </html>
