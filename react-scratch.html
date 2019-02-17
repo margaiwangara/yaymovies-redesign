@@ -19,17 +19,91 @@
       src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script type="text/babel">
       class App extends React.Component {
         constructor(props) {
           super(props);
+
+          this.state = {
+            title: [],
+            genres: [
+              name: []
+          ],
+            release_date: [],
+            runtime: [],
+            vote_average: [],
+            vote_count: []
+          };
         }
 
+        componentDidMount() {
+          const apiKey = "7538a1ba766c36605ab0e8e10bab23da";
+          const url = `https://api.themoviedb.org/3/trending/movie/day?api_key=${apiKey}`;
+
+          const url2 = `https://api.themoviedb.org/3/movie`;
+          axios
+            .get(url)
+            .then(resp =>
+              resp.data.results.map(data =>
+                axios
+                  .get(`${url2}/${data.id}?api_key=${apiKey}`)
+                  .then(movie => {
+                    let movies = movie.data;
+
+                    this.setState({
+                      title: [...this.state.title, movies.title],
+                      release_date: [
+                        ...this.state.release_date,
+                        movies.release_date
+                      ],
+                      runtime: [...this.state.runtime, movies.runtime],
+                      vote_average: [
+                        ...this.state.vote_average,
+                        movies.vote_average
+                      ],
+                      vote_count: [...this.state.vote_count, movies.vote_count]
+
+                    });
+                  })
+                  .catch(error => console.log(error))
+              )
+            )
+            .catch(error => console.log(error));
+        }
         render() {
+          const {
+            title,
+            release_date,
+            runtime,
+            vote_average,
+            vote_count
+          } = this.state;
+          const listed = title.map((value, key) => {
+            return (
+              <tr key={key}>
+                <td>{value}</td>
+                <td>{release_date[key]}</td>
+                <td>{runtime[key]}</td>
+                <td>
+                  {vote_average[key]} / {vote_count[key]} responses
+                </td>
+              </tr>
+            );
+          });
           return (
             <div>
-              <h1>This is the homepage</h1>
-              <p>Another trial homepage paragraph</p>
+              <table border="1">
+                <thead>
+                  <tr>
+                    <th>Title</th>
+                    <th>Release Date</th>
+                    <th>Runtime</th>
+                    <th>Ratings</th>
+                  </tr>
+                </thead>
+                <tbody>{listed}</tbody>
+              </table>
             </div>
           );
         }

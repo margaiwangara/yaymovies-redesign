@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Grid Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        max-width: 100%;
+        min-height: 100%;
+      }
+
+      #container {
+        max-width: 90%;
+        min-height: 500px;
+        padding: 20px;
+        margin: 60px auto;
+        border: solid 1px;
+        display: grid;
+        grid-template-areas:
+          "a b b"
+          "c b b"
+          "c d e";
+      }
+
+      #container > div {
+        width: 250px;
+        height: 250px;
+        border: solid 1px;
+      }
+
+      #container > div:first-child {
+        grid-area: a;
+      }
+
+      #container > div:nth-child(1) {
+        grid-area: b;
+      }
+
+      #container > div:nth-child(2) {
+        grid-area: c;
+      }
+
+      #container > div:nth-child(3) {
+        grid-area: d;
+      }
+
+      #container > div:last-child {
+        grid-area: e;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam tempore
+        iste obcaecati voluptatibus dolorem? Quaerat a ipsam magnam, expedita
+        provident et voluptatum officia fugit cumque.
+      </div>
+      <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
+        dignissimos corporis nostrum ratione id neque facilis odit labore
+        quisquam! Libero beatae aliquam facilis expedita odit suscipit
+        necessitatibus quibusdam sit harum natus, officiis molestiae consequatur
+        unde repellendus accusamus inventore doloremque eos quis nostrum. Sequi
+        necessitatibus porro consequuntur beatae labore, ut numquam.
+      </div>
+      <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore totam
+        quo eligendi quisquam alias, ducimus dignissimos! Non veniam veritatis,
+        commodi expedita laudantium molestias doloribus beatae atque hic
+        officiis recusandae dolore quisquam magnam, repellendus aliquid natus
+        unde facere qui consequatur labore, voluptatibus incidunt rem autem
+        illum. Consequatur saepe id dolore quia.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+        minima asperiores nobis obcaecati blanditiis dolor dolore at quas error
+        aut quisquam impedit dolorum, cum consectetur, amet magnam recusandae
+        doloremque neque. Laborum harum, porro assumenda est quo fugiat
+        quisquam, vitae culpa impedit ab ea temporibus animi, nemo sint expedita
+        consequatur! Reiciendis.
+      </div>
+      <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
+        molestiae id tempore facilis eos, eligendi, inventore unde voluptas
+        excepturi repellendus, ipsum quaerat eius culpa quasi molestias non! Ut
+        est officia harum eveniet fuga architecto mollitia totam corrupti a
+        fugiat, quisquam pariatur. Officiis pariatur sequi, optio distinctio
+        quidem dignissimos ex ipsam?
+      </div>
+    </div>
+  </body>
+</html>
