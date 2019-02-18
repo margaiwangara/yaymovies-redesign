@@ -27,11 +27,14 @@
           "a b b"
           "c b b"
           "c d e";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 0.5rem;
       }
 
       #container > div {
-        width: 250px;
-        height: 250px;
+        min-width: 250px;
+        min-height: 250px;
         border: solid 1px;
       }
 
